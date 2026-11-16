@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<layers>
+		<layer id="100" name="Labels">
+			<layer id="101" name="Cities"></layer>
+			<layer id="102" name="Countries"></layer>
+			<layer id="103" name="Depots"></layer>
+			<layer id="104" name="Provinces"></layer>
+			<layer id="105" name="States"></layer>
+			<layer id="106" name="Stations"></layer>
+			<layer id="107" name="Suburbs"></layer>
+			<layer id="108" name="Towns"></layer>
+		</layer>
+		<layer id="200" name="Track">
+			<layer id="201" name="Electrification"></layer>
+			<layer id="202" name="Points">
+				<feature_type_layer feature_type="Point" display_name="Point" />
+			</layer>
+			<layer id="203" name="Rail"></layer>
+			<layer id="204" name="Track Circuits">
+				<feature_type_layer feature_type="Track Circuit" display_name="Track Circuit" />
+			</layer>
+		</layer>
+		<layer id="300" name="Objects">
+			<layer id="301" name="Balises">
+				<feature_type_layer feature_type="Balise_US_AxleCounter" display_name="Balise_US_AxleCounter" />
+				<feature_type_layer feature_type="Balise_US_OverrunMagnet" display_name="Balise_US_OverrunMagnet" />
+				<feature_type_layer feature_type="Balise_US_TWCLoop_ExtendedAntennae" display_name="Balise_US_TWCLoop_ExtendedAntennae" />
+				<feature_type_layer feature_type="Balise_US_TWCLoop_HighSpeedLoop" display_name="Balise_US_TWCLoop_HighSpeedLoop" />
+			</layer>
+			<layer id="302" name="Telegrams">
+				<feature_type_layer feature_type="Telegram_OverrunMagnet" display_name="Telegram_OverrunMagnet" />
+			</layer>
+			<layer id="303" name="Tags">
+				<feature_type_layer feature_type="Tag" display_name="Tag" />
+			</layer>
+			<layer id="305" name="Transponders">
+				<feature_type_layer feature_type="Transponder" display_name="Transponder" />
+			</layer>
+			<layer id="320" name="CompositeSignals">
+				<feature_type_layer feature_type="CompositeSignal_Unknown" display_name="CompositeSignal_Unknown" />
+				<feature_type_layer feature_type="CompositeSignal_SPI" display_name="CompositeSignal_SPI" />
+				<feature_type_layer feature_type="CompositeSignal_V1L1_WSIS_mat_metal_2500cm" display_name="CompositeSignal_V1L1_WSIS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LS1_WSIS_mat_metal_2500cm" display_name="CompositeSignal_V3LS1_WSIS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LR1_mat_metal_2500cm" display_name="CompositeSignal_V3LR1_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LR1_WSIS_mat_metal_2500cm" display_name="CompositeSignal_V3LR1_WSIS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LL1_mat_metal_2500cm" display_name="CompositeSignal_V3LL1_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_GCI_mat_metal_2500cm" display_name="CompositeSignal_GCI_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSNLRV_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSNLRV_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSNLRV_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSNLRV_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSSLS_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSSLS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSSLS_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSSLS_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSSLS_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSSLS_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSSZM_WSNLRV_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSSZM_WSNLRV_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSTSO_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSTSO_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSTSO_WSNC_WSCSZM_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSTSO_WSNC_WSCSZM_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSTSO_WSNLRV_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSTSO_WSNLRV_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSTSO_WSNLRV_WSSLL_WSSLS_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSTSO_WSNLRV_WSSLL_WSSLS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSTSO_WSSLS_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSTSO_WSSLS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V2LS1_WSTSO_WSSLS_WSNLRV_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V2LS1_WSTSO_WSSLS_WSNLRV_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LL1_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" display_name="CompositeSignal_V3LL1_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LR1_WSIS_WSTSO_mat_metal_2500cm" display_name="CompositeSignal_V3LR1_WSIS_WSTSO_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LS1_WSIS_WSSLS_mat_metal_2500cm" display_name="CompositeSignal_V3LS1_WSIS_WSSLS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_V3LS1_WSIS_WSTSO_mat_metal_2500cm" display_name="CompositeSignal_V3LS1_WSIS_WSTSO_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSBB_mat_metal_2500cm" display_name="CompositeSignal_WSBB_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSDS_mat_metal_2500cm" display_name="CompositeSignal_WSDS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSHS_mat_metal_2500cm" display_name="CompositeSignal_WSHS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSNC_mat_metal_2500cm" display_name="CompositeSignal_WSNC_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSNC_WSFZ_mat_metal_2500cm" display_name="CompositeSignal_WSNC_WSFZ_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSNT_mat_metal_2500cm" display_name="CompositeSignal_WSNT_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSSAPS_mat_metal_2500cm" display_name="CompositeSignal_WSSAPS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSSLS_mat_metal_2500cm" display_name="CompositeSignal_WSSLS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSSLST1_mat_metal_2500cm" display_name="CompositeSignal_WSSLST1_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSSLST2_mat_metal_2500cm" display_name="CompositeSignal_WSSLST2_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSSLS_mat_metal_2500cm" display_name="CompositeSignal_WSSLS_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSTSO_mat_metal_2500cm" display_name="CompositeSignal_WSTSO_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSTSO_WSNC_mat_metal_2500cm" display_name="CompositeSignal_WSTSO_WSNC_mat_metal_2500cm" />
+				<feature_type_layer feature_type="CompositeSignal_WSSCA_mat_metal_2500cm" display_name="CompositeSignal_WSSCA_mat_metal_2500cm" />
+			</layer>
+			<layer id="321" name="CompositeSignals_Gantries">
+			</layer>
+			<layer id="322" name="CompositeSignals_GroundEquipment">
+			</layer>
+			<layer id="323" name="CompositeSignals_Sign">
+			</layer>
+			<layer id="324" name="CompositeSignals_Virtual">
+			</layer>
+			<layer id="330" name="Cameras">
+				<feature_type_layer feature_type="Platform Camera" display_name="Platform Camera" />
+			</layer>
+			<layer id="331" name="Detonators">
+				<feature_type_layer feature_type="Detonator" display_name="Detonator" />
+			</layer>
+			<layer id="340" name="Markers">
+				<feature_type_layer feature_type="PlatformStopMarker" display_name="PlatformStopMarker" />
+				<feature_type_layer feature_type="Marker Pin" display_name="Marker Pin" />
+			</layer>
+			<layer id="341" name="People">
+				<feature_type_layer feature_type="Platform Passenger - Boarding" display_name="Platform Passenger - Boarding" />
+				<feature_type_layer feature_type="Platform Passenger - Alighting" display_name="Platform Passenger - Alighting" />
+				<feature_type_layer feature_type="Platform Passenger - Arriving" display_name="Platform Passenger - Arriving" />
+				<feature_type_layer feature_type="Platform Passenger - Intoxicated" display_name="Platform Passenger - Intoxicated" />
+				<feature_type_layer feature_type="Platform Passenger - Pram" display_name="Platform Passenger - Pram" />
+				<feature_type_layer feature_type="Platform Passenger - Wheelchair" display_name="Platform Passenger - Wheelchair" />
+			</layer>
+			<layer id="350" name="Poles">
+				<feature_type_layer feature_type="Pole_mat_metal_1000cm" display_name="Pole_mat_metal_1000cm" />
+				<feature_type_layer feature_type="Pole_mat_metal_1500cm" display_name="Pole_mat_metal_1500cm" />
+				<feature_type_layer feature_type="Pole_mat_metal_2000cm" display_name="Pole_mat_metal_2000cm" />
+				<feature_type_layer feature_type="Pole_mat_metal_2200cm" display_name="Pole_mat_metal_2200cm" />
+				<feature_type_layer feature_type="Pole_mat_metal_2500cm" display_name="Pole_mat_metal_2500cm" />
+				<feature_type_layer feature_type="Pole_mat_metal_2800cm" display_name="Pole_mat_metal_2800cm" />
+				<feature_type_layer feature_type="Pole_mat_metal_3600cm" display_name="Pole_mat_metal_3600cm" />
+				<feature_type_layer feature_type="Pole_mat_metal_3700cm" display_name="Pole_mat_metal_3700cm" />
+				<feature_type_layer feature_type="Pole_US_SpeedGround" display_name="Pole_US_SpeedGround" />
+			</layer>
+			<layer id="351" name="Signs">
+				<feature_type_layer feature_type="Signal_US_WS_AdvanceSpeed" display_name="Signal_US_WS_AdvanceSpeed" />
+				<feature_type_layer feature_type="Signal_US_WS_AdvanceSpeedTrack1" display_name="Signal_US_WS_AdvanceSpeedTrack1" />
+				<feature_type_layer feature_type="Signal_US_WS_AdvanceSpeedTrack2" display_name="Signal_US_WS_AdvanceSpeedTrack2" />
+				<feature_type_layer feature_type="Signal_US_WS_BeginBraking" display_name="Signal_US_WS_BeginBraking" />
+				<feature_type_layer feature_type="Signal_US_WS_BeginTestZone" display_name="Signal_US_WS_BeginTestZone" />
+				<feature_type_layer feature_type="Signal_US_WS_ClearQuietZone" display_name="Signal_US_WS_ClearQuietZone" />
+				<feature_type_layer feature_type="Signal_US_WS_ClearSlowZoneMarker" display_name="Signal_US_WS_ClearSlowZoneMarker" />
+				<feature_type_layer feature_type="Signal_US_WS_DivergeSpeed" display_name="Signal_US_WS_DivergeSpeed" />
+				<feature_type_layer feature_type="Signal_US_WS_EndSchoolZone" display_name="Signal_US_WS_EndSchoolZone" />
+				<feature_type_layer feature_type="Signal_US_WS_EndTestZone" display_name="Signal_US_WS_EndTestZone" />
+				<feature_type_layer feature_type="Signal_US_WS_GradeCrossingStreetNameSign" display_name="Signal_US_WS_GradeCrossingStreetNameSign" />
+				<feature_type_layer feature_type="Signal_US_WS_HighWaterIndicator" display_name="Signal_US_WS_HighWaterIndicator" />
+				<feature_type_layer feature_type="Signal_US_WS_HornSign" display_name="Signal_US_WS_HornSign" />
+				<feature_type_layer feature_type="Signal_US_WS_InterlockingSign" display_name="Signal_US_WS_InterlockingSign" />
+				<feature_type_layer feature_type="Signal_US_WS_NoClearance" display_name="Signal_US_WS_NoClearance" />
+				<feature_type_layer feature_type="Signal_US_WS_QuietZone" display_name="Signal_US_WS_QuietZone" />
+				<feature_type_layer feature_type="Signal_US_WS_ReflectiveStationStopMarker" display_name="Signal_US_WS_ReflectiveStationStopMarker" />
+				<feature_type_layer feature_type="Signal_US_WS_ReflectiveStationStopMarkerInsulatedOverlap" display_name="Signal_US_WS_ReflectiveStationStopMarkerInsulatedOverlap" />
+				<feature_type_layer feature_type="Signal_US_WS_ReflectiveStationStopMarkerOperatingReverse" display_name="Signal_US_WS_ReflectiveStationStopMarkerOperatingReverse" />
+				<feature_type_layer feature_type="Signal_US_WS_ResumeSpeedMarker_OneCar" display_name="Signal_US_WS_ResumeSpeedMarker_OneCar" />
+				<feature_type_layer feature_type="Signal_US_WS_ResumeSpeedMarker_TwoCar" display_name="Signal_US_WS_ResumeSpeedMarker_TwoCar" />
+				<feature_type_layer feature_type="Signal_US_WS_SchoolZone" display_name="Signal_US_WS_SchoolZone" />
+				<feature_type_layer feature_type="Signal_US_WS_SlowZoneMarker" display_name="Signal_US_WS_SlowZoneMarker" />
+				<feature_type_layer feature_type="Signal_US_WS_SpeedLimitSign" display_name="Signal_US_WS_SpeedLimitSign" />
+				<feature_type_layer feature_type="Signal_US_WS_SpeedLimitSignTrack1" display_name="Signal_US_WS_SpeedLimitSignTrack1" />
+				<feature_type_layer feature_type="Signal_US_WS_SpeedLimitSignTrack2" display_name="Signal_US_WS_SpeedLimitSignTrack2" />
+				<feature_type_layer feature_type="Signal_US_WS_SpeedLimitSignPocket" display_name="Signal_US_WS_SpeedLimitSignPocket" />
+				<feature_type_layer feature_type="Signal_US_WS_StationAudible" display_name="Signal_US_WS_StationAudible" />
+				<feature_type_layer feature_type="Signal_US_WS_StationNameSign" display_name="Signal_US_WS_StationNameSign" />
+				<feature_type_layer feature_type="Signal_US_WS_StationStopSign" display_name="Signal_US_WS_StationStopSign" />
+				<feature_type_layer feature_type="Signal_US_WS_Stop" display_name="Signal_US_WS_Stop" />
+				<feature_type_layer feature_type="Signal_US_WS_StopAndProceedSign" display_name="Signal_US_WS_StopAndProceedSign" />
+				<feature_type_layer feature_type="Signal_US_WS_StopAndProceedSignTrack" display_name="Signal_US_WS_StopAndProceedSignTrack" />
+				<feature_type_layer feature_type="Signal_US_WS_StopCallControl" display_name="Signal_US_WS_StopCallControl" />
+				<feature_type_layer feature_type="Signal_US_WS_Whistle" display_name="Signal_US_WS_Whistle" />
+				<feature_type_layer feature_type="Signal_US_WS_WorkZoneMarker" display_name="Signal_US_WS_WorkZoneMarker" />
+				<feature_type_layer feature_type="Signal_US_WS_YardLimit" display_name="Signal_US_WS_YardLimit" />
+				<feature_type_layer feature_type="Signal_US_WS_BlankYellowSign" display_name="Signal_US_WS_BlankYellowSign" />
+				<feature_type_layer feature_type="Signal_US_WS_DiagonalHazardMarker" display_name="Signal_US_WS_DiagonalHazardMarker" />
+				<feature_type_layer feature_type="Signal_US_WS_FloodZone" display_name="Signal_US_WS_FloodZone" />
+				<feature_type_layer feature_type="Signal_US_WS_NoLightRailVehicles" display_name="Signal_US_WS_NoLightRailVehicles" />
+				<feature_type_layer feature_type="Signal_US_WS_NoTrespassing" display_name="Signal_US_WS_NoTrespassing" />
+				<feature_type_layer feature_type="Signal_US_WS_StopLookListen" display_name="Signal_US_WS_StopLookListen" />
+				<feature_type_layer feature_type="Signal_US_WS_TrainSignalOnly" display_name="Signal_US_WS_TrainSignalOnly" />
+			</layer>
+			<layer id="352" name="Signals">
+				<feature_type_layer feature_type="Signal_US_GradeCrossingIndicator" display_name="Signal_US_GradeCrossingIndicator" />
+				<feature_type_layer feature_type="Signal_US_H_2L_S_1" display_name="Signal_US_H_2L_S_1" />
+				<feature_type_layer feature_type="Signal_US_SPI" display_name="Signal_US_SPI" />
+				<feature_type_layer feature_type="Signal_US_V_1L_1" display_name="Signal_US_V_1L_1" />
+				<feature_type_layer feature_type="Signal_US_V_2L_S_1" display_name="Signal_US_V_2L_S_1" />
+				<feature_type_layer feature_type="Signal_US_V_3L_L_1" display_name="Signal_US_V_3L_L_1" />
+				<feature_type_layer feature_type="Signal_US_V_3L_R_1" display_name="Signal_US_V_3L_R_1" />
+				<feature_type_layer feature_type="Signal_US_V_3L_S_1" display_name="Signal_US_V_3L_S_1" />
+			</layer>
+			<layer id="360" name="Triggers"></layer>
+            <layer id="362" name="Obstructions">
+				<feature_type_layer feature_type="Dog" display_name="Dog" />
+				<feature_type_layer feature_type="Shopping_Cart" display_name="Shopping_Cart" />
+				<feature_type_layer feature_type="Oil_Spill" display_name="Oil_Spill" />
+				<feature_type_layer feature_type="Stationnary_Car" display_name="Stationnary_Car" />
+				<feature_type_layer feature_type="Metro_Bus" display_name="Metro_Bus" />
+				<feature_type_layer feature_type="Bicycle" display_name="Bicycle" />
+				<feature_type_layer feature_type="Cinder_block" display_name="Cinder_block" />
+				<feature_type_layer feature_type="Gravel_Spill" display_name="Gravel_Spill" />
+				<feature_type_layer feature_type="Wooden_plank" display_name="Wooden_plank" />
+			</layer>
+		</layer>
+		<layer id="400" name="Regions">
+			<layer id="401" name="Platforms">
+				<feature_type_layer feature_type="Station" display_name="Station" />
+				<feature_type_layer feature_type="Platform" display_name="Platform" />
+			</layer>
+			<layer id="402" name="Radio"></layer>
+			<layer id="403" name="Signalling"></layer>
+			<layer id="404" name="Tunnels">
+				<feature_type_layer feature_type="Tunnel" display_name="Tunnel" />
+			</layer>
+		</layer>
+		<layer id="500" name="Background"></layer>
+		<layer id="600" name="Vehicles">
+			<layer id="601" name="Bus"></layer>
+			<layer id="602" name="Car"></layer>
+			<layer id="603" name="Train"></layer>
+			<layer id="604" name="Tram"></layer>
+			<layer id="605" name="Truck"></layer>
+		</layer>
+		<layer id="700" name="Unallocated">
+		</layer>
+	</layers>
+</config>

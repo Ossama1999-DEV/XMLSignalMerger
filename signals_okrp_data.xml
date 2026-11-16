@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<okrp_data dataset="HOUSTON">
+	<signals_library>
+		<signal_states>
+			<state name="Actif" level="-1" index="0" telegram_name="Actif" telegram_abstract_code="0" />
+			<state name="Inactif" level="-1" index="1" telegram_name="Inactif" telegram_abstract_code="1" />
+			<!-- ######################################################################################################################## -->
+			<!-- ############################# Etats des signaux LRV #################################################################### -->
+			<!-- ######################################################################################################################## -->
+			<state name="US_Dark" level="-1" index="100" telegram_name="US_Dark" telegram_abstract_code="100" />
+			<state name="US_On" level="-1" index="101" telegram_name="US_On" telegram_abstract_code="101" />
+			<state name="US_Malfunction" level="-1" index="102" telegram_name="US_Malfunction" telegram_abstract_code="102" />
+			<state name="US_Stop" level="-1" index="103" telegram_name="US_Stop" telegram_abstract_code="103" />
+			<state name="US_StopCaution" level="-1" index="104" telegram_name="US_StopCaution" telegram_abstract_code="104" />
+			<state name="US_ProceedNormal" level="-1" index="105" telegram_name="US_ProceedNormal" telegram_abstract_code="105" />
+			<state name="US_NormalCaution" level="-1" index="106" telegram_name="US_NormalCaution" telegram_abstract_code="106" />
+			<state name="US_ProceedDiverge" level="-1" index="107" telegram_name="US_ProceedDiverge" telegram_abstract_code="107" />
+			<state name="US_DivergingCaution" level="-1" index="108" telegram_name="US_DivergingCaution" telegram_abstract_code="108" />
+			<state name="US_Normal" level="-1" index="109" telegram_name="US_Normal" telegram_abstract_code="109" />
+			<state name="US_Reverse" level="-1" index="110" telegram_name="US_Reverse" telegram_abstract_code="110" />
+		</signal_states>
+		<pole_types>
+			<pole_type feature_type_name="Pole_mat_metal_1000cm" />
+			<pole_type feature_type_name="Pole_mat_metal_1500cm" />
+			<pole_type feature_type_name="Pole_mat_metal_2000cm" />
+			<pole_type feature_type_name="Pole_mat_metal_2200cm" />
+			<pole_type feature_type_name="Pole_mat_metal_2500cm" />
+			<pole_type feature_type_name="Pole_mat_metal_2800cm" />
+			<pole_type feature_type_name="Pole_mat_metal_3600cm" />
+			<pole_type feature_type_name="Pole_mat_metal_3700cm" />
+			<pole_type feature_type_name="Pole_US_SpeedGround" />
+		</pole_types>
+		<basic_signal_types>
+			<basic_signal_type feature_type_name="Signal_BusStop" is_sc_signal="false" semantic="Signal_BusStop">
+				<states>
+					<state name="Actif" />
+					<state name="Inactif" />
+				</states>
+				<modify_text modify="false">
+					<default_text></default_text>
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_TurningPoint" is_sc_signal="false" semantic="Signal_TurningPoint">
+				<states>
+					<state name="Actif" />
+					<state name="Inactif" />
+				</states>
+				<modify_text modify="false">
+					<default_text></default_text>
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<!-- ######################################################################################################################## -->
+			<!-- ######################################################################################################################## -->
+			<!-- #######################################       Signaux LRV      ######################################################### -->
+			<!-- ######################################################################################################################## -->
+			<!-- ######################################################################################################################## -->
+			<basic_signal_type feature_type_name="Signal_US_GradeCrossingIndicator" is_sc_signal="false" semantic="GCISignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_ProceedNormal" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_H_2L_S_1" is_sc_signal="false" semantic="LightSignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_StopCaution" />
+					<state name="US_ProceedNormal" />
+					<state name="US_NormalCaution" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_SPI" is_sc_signal="false" semantic="SPISignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_Normal" />
+					<state name="US_Reverse" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_V_1L_1" is_sc_signal="false" semantic="LightSignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_StopCaution" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_V_2L_S_1" is_sc_signal="false" semantic="LightSignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_StopCaution" />
+					<state name="US_ProceedNormal" />
+					<state name="US_NormalCaution" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_V_3L_L_1" is_sc_signal="false" semantic="LightSignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_StopCaution" />
+					<state name="US_ProceedNormal" />
+					<state name="US_NormalCaution" />
+					<state name="US_ProceedDiverge" />
+					<state name="US_DivergingCaution" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_V_3L_R_1" is_sc_signal="false" semantic="LightSignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_StopCaution" />
+					<state name="US_ProceedNormal" />
+					<state name="US_NormalCaution" />
+					<state name="US_ProceedDiverge" />
+					<state name="US_DivergingCaution" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_V_3L_S_1" is_sc_signal="false" semantic="LightSignal">
+				<states>
+					<state name="US_Dark" />
+					<state name="US_On" />
+					<state name="US_Malfunction" />
+					<state name="US_Stop" />
+					<state name="US_StopCaution" />
+					<state name="US_ProceedNormal" />
+					<state name="US_NormalCaution" />
+					<state name="US_ProceedDiverge" />
+					<state name="US_DivergingCaution" />
+				</states>
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_AdvanceSpeed" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_AdvanceSpeedTrack1" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_AdvanceSpeedTrack2" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_BeginBraking" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_BeginTestZone" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_ClearQuietZone" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_ClearSlowZoneMarker" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_DivergeSpeed" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_EndSchoolZone" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_EndTestZone" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_GradeCrossingStreetNameSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_HighWaterIndicator" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_HornSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_InterlockingSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_NoClearance" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_QuietZone" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_ReflectiveStationStopMarker" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_ReflectiveStationStopMarkerInsulatedOverlap" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_ReflectiveStationStopMarkerOperatingReverse" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_ResumeSpeedMarker_OneCar" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_ResumeSpeedMarker_TwoCar" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_SchoolZone" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_SlowZoneMarker" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_SpeedLimitSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_SpeedLimitSignTrack1" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_SpeedLimitSignTrack2" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_SpeedLimitSignPocket" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_StationAudible" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_StationNameSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_StationStopSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_Stop" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_StopAndProceedSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_StopAndProceedSignTrack" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="true">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_StopCallControl" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_Whistle" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_WorkZoneMarker" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_YardLimit" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_TrainSignalOnly" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_FloodZone" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_BlankYellowSign" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_NoTrespassing" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_DiagonalHazardMarker" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_NoLightRailVehicles" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<basic_signal_type feature_type_name="Signal_US_WS_StopLookListen" is_sc_signal="false" semantic="">
+				<states />
+				<modify_text modify="false">
+					<default_text />
+				</modify_text>
+				<behaviour>
+					<filter value="0" />
+					<section_busiers_states />
+					<sequencable_states />
+					<init>
+						<preferred_states />
+						<avoid_states />
+					</init>
+					<rules>
+						<default_states />
+					</rules>
+				</behaviour>
+			</basic_signal_type>
+			<!-- ######################################################################################################################## -->
+			<!-- ######################################################################################################################## -->
+			<!-- #######################################   Fin Signaux LRV      ######################################################### -->
+			<!-- ######################################################################################################################## -->
+			<!-- ######################################################################################################################## -->
+		</basic_signal_types>
+		<composite_signal_types>
+			<composite_signal_type feature_type_name="CompositeSignal_Unknown" />
+			<composite_signal_type feature_type_name="CompositeSignal_SPI" />
+			<composite_signal_type feature_type_name="CompositeSignal_V1L1_WSIS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LS1_WSIS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LR1_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LR1_WSIS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LL1_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_GCI_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSNLRV_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSNLRV_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSSLS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSSLS_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSSLS_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSSZM_WSNLRV_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSTSO_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSTSO_WSNC_WSCSZM_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSTSO_WSNLRV_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSTSO_WSNLRV_WSSLL_WSSLS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSTSO_WSSLS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V2LS1_WSTSO_WSSLS_WSNLRV_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LL1_WSTSO_WSNLRV_WSSLL_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LR1_WSIS_WSTSO_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LS1_WSIS_WSSLS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_V3LS1_WSIS_WSTSO_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSBB_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSDS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSHS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSNC_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSNC_WSFZ_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSNT_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSSAPS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSSLS_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSSLST1_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSSLST2_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSTSO_mat_metal_2500cm" />
+			<composite_signal_type feature_type_name="CompositeSignal_WSTSO_WSNC_mat_metal_2500cm" />
+		</composite_signal_types>
+	</signals_library>
+</okrp_data>
